@@ -1,0 +1,11 @@
+{
+  "name": "gcherry-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/create-assets.mjs && node scripts/build-site.mjs",
+    "test": "npm run build && node scripts/validate-site.mjs",
+    "start": "python3 -m http.server 4173"
+  }
+}
